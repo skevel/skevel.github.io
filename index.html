@@ -2,76 +2,56 @@
 <html>
 
 <head>
-    <title>skevel - portfolio</title>
+    <title>KEVIN SANGLIER - PORTFOLIO</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
     <link rel="icon" href="media/SK.ico" />
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="en.css" id="css-en" />
-    <link rel="stylesheet" href="fr.css" id="css-fr" disabled />
 </head>
-
-<script>
-    function switchLang() {
-        const css_en = document.getElementById("css-en");
-        const css_fr = document.getElementById("css-fr");
-        const flag = document.getElementById("flag");
-
-        if (css_en.disabled) {
-            css_en.disabled = false;
-            css_fr.disabled = true;
-            flag.src = "media/fr-flag.png";
-        } else {
-            css_en.disabled = true;
-            css_fr.disabled = false;
-            flag.src = "media/us-flag.png";
-        }
-    }
-</script>
 
 <nav>
     <a class="no_cyan"><img src="media/SK.png" /></a>
-    <h1>SKEVEL - PORTFOLIO</h1>
-    <a class="no_cyan" onclick="switchLang()"><img id="flag" src="media/fr-flag.png" /></a>
+    <h1>KEVIN SANGLIER - PORTFOLIO</h1>
+    <a class="no_cyan"><img src="media/BE.png" /></a>
 </nav>
 
 <div class="page">
     <details>
-        <summary class="txt_technologies"></summary>
+        <summary>TECHNOLOGIES</summary>
         <div class="cards">
             <p>TODO</p>
         </div>
     </details>
     <details>
-        <summary class="txt_certificates"></summary>
+        <summary>CERTIFICATES</summary>
         <div class="cards">
             <div class="card">
-                <img src="media/cert_thm_aoc2024.jpeg">
                 <a href="https://tryhackme.com"><img src="media/website.png"></a>
                 <h1>TryHackMe - Advent of Cyber 2024</h1>
+                <img src="media/cert/cert_thm_aoc2024.jpeg">
             </div>
         </div>
     </details>
     <details>
-        <summary class="txt_projects"></summary>
+        <summary>CTF WRITE-UPS</summary>
         <div class="cards">
             <div class="card">
-                <video controls>
-                    <source src="media/vid1.mp4" type="video/mp4">
-                </video>
-                <a href="https://github.com/skevel/zooschedule"><img src="media/github.png"></a>
-                <h1>ZooSchedule</h1>
-                <p class="txt_progress"></p>
-                <p class="txt_zooschedule"></p>
-                <p><br>> ?</p>
+                <a href="https://tryhackme.com"><img src="media/website.png"></a>
+                <h1>CTF 1</h1>
+                <p>> Python \ Wireshark</p><br>
+                <details class="details_ctf">
+                    <summary class="summary_ctf">Write-up</summary>
+                    <p>Write-up for CTF 1. Write-up for CTF 1. Write-up for CTF 1. Write-up for CTF 1. Write-up for CTF 1. Write-up for CTF 1. Write-up for CTF 1. Write-up for CTF 1. Write-up for CTF 1.</p>
+                </details>
             </div>
             <div class="card">
-                <img src="media/github_empty.png">
-                <a href="https://github.com/skevel/dingominisolver"><img src="media/github.png"></a>
-                <h1>DingominiSolver</h1>
-                <p class="txt_progress"></p>
-                <p class="txt_dingominisolver"></p>
-                <p><br>> Python</p>
+                <a href="https://tryhackme.com"><img src="media/website.png"></a>
+                <h1>CTF 2</h1>
+                <p>> Python \ Wireshark</p><br>
+                <details class="details_ctf">
+                    <summary class="summary_ctf">Write-up</summary>
+                    <p>Write-up for CTF 2. Write-up for CTF 2. Write-up for CTF 2. Write-up for CTF 2. Write-up for CTF 2. Write-up for CTF 2. Write-up for CTF 2. Write-up for CTF 2. Write-up for CTF 2.</p>
+                </details>
             </div>
         </div>
     </details>
