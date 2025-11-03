@@ -16,14 +16,27 @@
 }
 
 body {
-    background-image: url("media/BG.gif");
+    /* background-image: url("media/BG.gif"); */
+    /* background-repeat: no-repeat; */
+    /* background-size: cover; */
     background-color: var(--col_card);
-    background-repeat: no-repeat;
-    background-size: cover;
     word-wrap: break-word;
     margin: 0%;
     min-height: 100%;
     min-width: 100%;
+}
+
+#bgvideo {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    transform: translate(-50%, -50%);
+    object-fit: cover;
 }
 
 /* ---------------------------------------- texts, images, buttons ---------------------------------------- */
