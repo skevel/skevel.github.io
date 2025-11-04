@@ -20,7 +20,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
-    background-color: var(--col_card);
+    background-color: var(--col_active);
     word-wrap: break-word;
     margin: 0%;
     min-height: 100%;
@@ -62,7 +62,7 @@ h1 {
     color: var(--col_h1);
 }
 
-.buttontab,
+.tab-menu>label,
 summary {
     font-size: 1.2em;
     font-weight: 800;
@@ -75,14 +75,14 @@ summary {
     border: none;
 }
 
-.buttontab:hover,
+.tab-menu>label:hover,
 summary:hover {
     letter-spacing: 0.18em;
     color: var(--col_active);
     transition: letter-spacing 0.5s;
 }
 
-.buttontab::after {
+.tab-menu>label::after {
     content: "";
     display: flex;
     margin-top: 0.4em;
@@ -90,11 +90,6 @@ summary:hover {
     height: 0.2em;
     border-radius: 0.1em;
     background: var(--col_active);
-    transition: width 0.5s;
-}
-
-.buttontab.active::after {
-    width: 100%;
     transition: width 0.5s;
 }
 
@@ -136,14 +131,23 @@ nav>img {
     padding-bottom: 2%;
 }
 
+#tab-tech:checked ~ #technologies,
+#tab-cert:checked ~ #certificates,
+#tab-ctf:checked ~ #ctfwriteups {
+    display: block;
+}
+
+#tab-tech:checked ~ .tab-menu label[for="tab-tech"]::after,
+#tab-cert:checked ~ .tab-menu label[for="tab-cert"]::after,
+#tab-ctf:checked ~ .tab-menu label[for="tab-ctf"]::after {
+    width: 100%;
+    transition: width 0.5s;
+}
+
 /* ---------------------------------------- tab, card ---------------------------------------- */
 .tab {
     display: none;
     column-count: 2;
-}
-
-.tab.active {
-    display: block;
 }
 
 .card {
